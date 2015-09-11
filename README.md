@@ -1,2 +1,2 @@
-# shine720.github.io
+# Elisabeth's site 
 Creative Computer Project 1
