@@ -4,17 +4,19 @@ var speed3 = 0;
 var speed4 = 0;
 var speed5 = 0;
 var speed6 = 0;
-//var mySound;
+var mySound;
 
-//function preload() {
-//mySound = loadSound('NyanCat.mp3');
+function preload() {
+mySound = loadSound('../sound/NyanCat.mp3');
 }
 
 function setup() {
   createCanvas(800, 600);
   // set canvas height/width
   createCanvas(windowWidth, windowHeight);
-//song.setVolume (0.5);
+  //soundFormats('mp3');
+  mySound.setVolume(0.5);
+  mySound.play();
 }
 
 function draw() {
@@ -154,8 +156,8 @@ var growing = height/60 * second(); // this is the equation that affects movemen
 //fill (c);
 //noStroke();
 rect(0,height-growing,width,growing); // x pos, y pos, width, height
-console.log("Current Second: " + second());
-console.log("Current Minute: " + minute());
+//console.log("Current Second: " + second());
+//console.log("Current Minute: " + minute());
 
 speed4 = speed4 + 5;
 if(speed4 > width) {
@@ -205,8 +207,8 @@ translate (speed4, height-growing, width,growing);
 triangle (0,390,70,420 ,0, 450);
 ellipse (100, 420, 110, 60);
 
-console.log("Current Second: " + second());
-console.log("Current Minute: " + minute());
+//console.log("Current Second: " + second());
+//console.log("Current Minute: " + minute());
 //triangle (130,570,50,590 ,130, 620);
 //ellipse (40, 590, 110, 60);
 
